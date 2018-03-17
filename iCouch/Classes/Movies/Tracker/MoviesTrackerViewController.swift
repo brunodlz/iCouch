@@ -67,7 +67,7 @@ class MoviesTrackerViewController: UIViewController, MoviesTrackerView {
 
     func show(entities: [Movie]) {
         didFinishRequest()
-        listOfMovies = entities
+        listOfMovies.append(contentsOf: entities)
     }
     
     func showError(message: String) {
@@ -85,6 +85,13 @@ extension MoviesTrackerViewController: UICollectionViewDataSource, UICollectionV
         cell.set(path: movie.posterPath)
         
         return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if indexPath.row == listOfMovies.count - 1 {
+            currentPage += 1
+            presenter?.loadContent(page: currentPage)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
