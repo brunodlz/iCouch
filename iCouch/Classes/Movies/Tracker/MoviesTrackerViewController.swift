@@ -50,12 +50,15 @@ class MoviesTrackerViewController: UIViewController, MoviesTrackerView {
         guard let presenter = presenter else {
             fatalError("Presenter cannot be loaded!")
         }
-        
+
+        didStartRequest()
         presenter.loadContent(page: currentPage)
     }
     
     private func initializers() {
         title = "Movies Tracker"
+        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.delegate = self
@@ -63,11 +66,12 @@ class MoviesTrackerViewController: UIViewController, MoviesTrackerView {
     }
 
     func show(entities: [Movie]) {
+        didFinishRequest()
         listOfMovies = entities
     }
     
     func showError(message: String) {
-        print(message)
+        print("👻 \(message)")
     }
 }
 
@@ -85,7 +89,7 @@ extension MoviesTrackerViewController: UICollectionViewDataSource, UICollectionV
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let movie = listOfMovies[indexPath.item]
-        presenter?.showDetail(through: movie.id)
+        presenter?.showDetail(through: movie)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

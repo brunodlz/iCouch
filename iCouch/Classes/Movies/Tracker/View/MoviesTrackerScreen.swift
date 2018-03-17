@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MoviesTrackerScreen: UIView {
+final class MoviesTrackerScreen: UIView {
     
     let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()

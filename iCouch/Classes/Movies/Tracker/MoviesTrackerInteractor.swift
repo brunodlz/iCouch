@@ -18,7 +18,7 @@ final class MoviesTrackerInteractor: MoviesTrackerInteractorInput {
     }
 
     func find(by endPoint: URLRequest) -> Observable<[Movie]> {
-        return self.api.find(endPoint).map { json -> [Movie] in
+        return api.find(endPoint).map { json -> [Movie] in
             guard let movies = json as? [String:AnyObject] else { fatalError("Something is wrong with JSON") }
             
             return (try movies

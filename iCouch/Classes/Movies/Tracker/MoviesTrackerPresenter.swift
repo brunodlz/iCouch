@@ -6,7 +6,6 @@
 //  Copyright © 2018 Bruno da Luz. All rights reserved.
 //
 
-import Alamofire
 import RxSwift
 
 final class MoviesTrackerPresenter: MoviesTrackerPresenterInput {
@@ -24,9 +23,9 @@ final class MoviesTrackerPresenter: MoviesTrackerPresenterInput {
     }
     
     func loadContent(page: Int64) {
-        let url = URL(string: EndPoints.raise.upcomming(page).url())
-        
-        guard let endPoint = url else { fatalError("The endPoint cannot be nil") }
+        guard let endPoint = URL(string: EndPoints.raise.upcomming(page).getUrl()) else {
+            fatalError("The endPoint cannot be nil")
+        }
         
         self.interactor.find(by: URLRequest(url: endPoint))
             .subscribe { [weak self] event in
@@ -40,7 +39,7 @@ final class MoviesTrackerPresenter: MoviesTrackerPresenterInput {
             }.disposed(by: disposeBag)
     }
     
-    func showDetail(through id: Int) {
-        router.showDetail(through: id)
+    func showDetail(through movie: Movie) {
+        router.showDetail(through: movie)
     }
 }

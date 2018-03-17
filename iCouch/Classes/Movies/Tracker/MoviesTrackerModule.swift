@@ -10,7 +10,10 @@ import UIKit
 
 final class MoviesTrackerModule: MoviesTrackerRouter {
     
-    func start() -> UINavigationController {
+    weak var navigation: UINavigationController?
+    
+    func start(in window: UIWindow?) {
+        
         let moviesView = MoviesTrackerViewController()
         
         let client = TrackerClient()
@@ -21,12 +24,16 @@ final class MoviesTrackerModule: MoviesTrackerRouter {
         let presenter = MoviesTrackerPresenter(moviesView, interactor: interactor, router: self)
         
         moviesView.presenter = presenter
-        
-        return MainNavigationController(rootViewController: moviesView)
+
+        let mainNavigation = MainNavigationController(rootViewController: moviesView)
+        navigation = mainNavigation
+
+        window?.rootViewController = mainNavigation
     }
     
-    func showDetail(through id: Int) {
-        print("ID: \(id)")
+    func showDetail(through movie: Movie) {
+        let module = MovieDetailModule(movie)
+        module.push(navigator: navigation)
     }
     
 }

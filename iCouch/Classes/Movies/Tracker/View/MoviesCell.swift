@@ -30,16 +30,11 @@ class MoviesCell: UICollectionViewCell {
     }
     
     func set(path: String) {
-        banner.image = nil
-        
-        guard let url = URL(string: EndPoints.raise.image(path).url()) else {
+        guard let url = URL(string: EndPoints.raise.image(path).getUrl()) else {
             fatalError("EndPoint Image cannot be created!")
         }
-        
-        ImageManager().download(url: url) { [weak self] image in
-            DispatchQueue.main.async {
-                self?.banner.image = image
-            }
-        }
+
+        banner.image = nil
+        banner.af_setImage(withURL: url)
     }
 }

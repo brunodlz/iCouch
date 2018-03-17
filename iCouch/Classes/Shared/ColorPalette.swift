@@ -10,7 +10,8 @@ import UIKit
 
 enum ColorPalette {
     
-    static let darkGray = UIColor(red: 35.0/255.0, green: 38.0/255.0, blue: 38.0/255.0, alpha: 1.0)
+    static let darkGray = UIColor(red: 44.0/255.0,  green: 44.0/255.0,  blue: 54.0/255.0,  alpha: 1.0)
+    static let gray     = UIColor(red: 123.0/255.0, green: 125.0/255.0, blue: 139.0/255.0, alpha: 1.0)
     static let white    = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1.0)
     
 }

@@ -11,7 +11,7 @@ import RxSwift
 
 protocol MoviesTrackerRouter: class {
     
-    func showDetail(through id: Int)
+    func showDetail(through movie: Movie)
     
 }
 
@@ -32,6 +32,8 @@ protocol MoviesTrackerPresenterInput: class {
 }
 
 protocol MoviesTrackerAPI: class {
+    
+    init(client: TrackerClient)
     
     func find(_ endPoint: URLRequest) -> Observable<Any>
     
