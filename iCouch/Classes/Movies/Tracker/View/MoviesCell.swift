@@ -29,12 +29,11 @@ class MoviesCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func set(path: String) {
-        guard let url = URL(string: EndPoints.raise.image(path).getUrl()) else {
-            fatalError("EndPoint Image cannot be created!")
-        }
-
+    func set(path: String?) {
         banner.image = nil
-        banner.af_setImage(withURL: url)
+        
+        if let path = path, let url = URL(string: EndPoints.raise.image(path).getUrl()) {
+            banner.af_setImage(withURL: url)
+        }
     }
 }
