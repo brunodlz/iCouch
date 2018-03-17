@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1528AE60205CB752008FF349 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1528AE5F205CB752008FF349 /* MovieDetailViewController.swift */; };
+		1528AE66205CCE53008FF349 /* MovieDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1528AE65205CCE53008FF349 /* MovieDetailScreen.swift */; };
+		1528AE69205CD7B6008FF349 /* MovieDetailModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1528AE68205CD7B6008FF349 /* MovieDetailModule.swift */; };
+		1528AE6B205CD9FE008FF349 /* MovieDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1528AE6A205CD9FE008FF349 /* MovieDetailPresenter.swift */; };
+		1528AE6D205CDA35008FF349 /* MovieDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1528AE6C205CDA35008FF349 /* MovieDetailProtocols.swift */; };
+		1528AE6F205CDB54008FF349 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1528AE6E205CDB54008FF349 /* MovieDetail.swift */; };
+		1528AE73205CDFC5008FF349 /* MovieDetailSyncAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1528AE72205CDFC5008FF349 /* MovieDetailSyncAPI.swift */; };
+		1528AE75205CE083008FF349 /* MovieDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1528AE74205CE083008FF349 /* MovieDetailInteractor.swift */; };
 		154832BF205B50F800AB0262 /* TrackerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154832BE205B50F800AB0262 /* TrackerClient.swift */; };
 		154832C1205B573C00AB0262 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154832C0205B573C00AB0262 /* MainNavigationController.swift */; };
 		154832C4205B597100AB0262 /* MoviesTrackerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154832C3205B597100AB0262 /* MoviesTrackerInteractor.swift */; };
-		154832C6205B6F5D00AB0262 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154832C5205B6F5D00AB0262 /* ImageManager.swift */; };
 		154832C8205B779F00AB0262 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154832C7205B779F00AB0262 /* UIImage+Extension.swift */; };
 		1566FCA7205A414A007A51DD /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1566FCA6205A414A007A51DD /* EndPoints.swift */; };
 		1566FCAB205A4402007A51DD /* MoviesTrackerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1566FCAA205A4402007A51DD /* MoviesTrackerPresenter.swift */; };
 		1566FCAD205A456A007A51DD /* MoviesTrackerSyncAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1566FCAC205A456A007A51DD /* MoviesTrackerSyncAPI.swift */; };
 		1566FCAF205A45B7007A51DD /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1566FCAE205A45B7007A51DD /* Movie.swift */; };
+		15980CF1205D592C00E19DDA /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15980CF0205D592C00E19DDA /* Genre.swift */; };
+		15A07AC6205D619D009B0B1B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A07AC5205D619D009B0B1B /* UIViewController+Extension.swift */; };
 		15F583D5205A242300C6AD20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F583D4205A242300C6AD20 /* AppDelegate.swift */; };
 		15F583DC205A242300C6AD20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15F583DB205A242300C6AD20 /* Assets.xcassets */; };
 		15F583DF205A242300C6AD20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15F583DD205A242300C6AD20 /* LaunchScreen.storyboard */; };
@@ -30,15 +39,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1528AE5F205CB752008FF349 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		1528AE65205CCE53008FF349 /* MovieDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailScreen.swift; sourceTree = "<group>"; };
+		1528AE68205CD7B6008FF349 /* MovieDetailModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailModule.swift; sourceTree = "<group>"; };
+		1528AE6A205CD9FE008FF349 /* MovieDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenter.swift; sourceTree = "<group>"; };
+		1528AE6C205CDA35008FF349 /* MovieDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailProtocols.swift; sourceTree = "<group>"; };
+		1528AE6E205CDB54008FF349 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
+		1528AE72205CDFC5008FF349 /* MovieDetailSyncAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailSyncAPI.swift; sourceTree = "<group>"; };
+		1528AE74205CE083008FF349 /* MovieDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailInteractor.swift; sourceTree = "<group>"; };
 		154832BE205B50F800AB0262 /* TrackerClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerClient.swift; sourceTree = "<group>"; };
 		154832C0205B573C00AB0262 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		154832C3205B597100AB0262 /* MoviesTrackerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTrackerInteractor.swift; sourceTree = "<group>"; };
-		154832C5205B6F5D00AB0262 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		154832C7205B779F00AB0262 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		1566FCA6205A414A007A51DD /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 		1566FCAA205A4402007A51DD /* MoviesTrackerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTrackerPresenter.swift; sourceTree = "<group>"; };
 		1566FCAC205A456A007A51DD /* MoviesTrackerSyncAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTrackerSyncAPI.swift; sourceTree = "<group>"; };
 		1566FCAE205A45B7007A51DD /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		15980CF0205D592C00E19DDA /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		15A07AC5205D619D009B0B1B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		15F583D1205A242300C6AD20 /* iCouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15F583D4205A242300C6AD20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15F583DB205A242300C6AD20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,6 +95,55 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		1528AE61205CB758008FF349 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				1528AE71205CDB61008FF349 /* Entity */,
+				1528AE67205CD652008FF349 /* View */,
+				1528AE70205CDB58008FF349 /* Protocols */,
+				1528AE5F205CB752008FF349 /* MovieDetailViewController.swift */,
+				1528AE68205CD7B6008FF349 /* MovieDetailModule.swift */,
+				1528AE6A205CD9FE008FF349 /* MovieDetailPresenter.swift */,
+				1528AE72205CDFC5008FF349 /* MovieDetailSyncAPI.swift */,
+				1528AE74205CE083008FF349 /* MovieDetailInteractor.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		1528AE62205CB770008FF349 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				15F583EC205A29E600C6AD20 /* Tracker */,
+				1528AE61205CB758008FF349 /* Detail */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		1528AE67205CD652008FF349 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1528AE65205CCE53008FF349 /* MovieDetailScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1528AE70205CDB58008FF349 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1528AE6C205CDA35008FF349 /* MovieDetailProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1528AE71205CDB61008FF349 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				1528AE6E205CDB54008FF349 /* MovieDetail.swift */,
+				15980CF0205D592C00E19DDA /* Genre.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		154832C2205B574200AB0262 /* NavigationController */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +165,6 @@
 			children = (
 				1566FCA6205A414A007A51DD /* EndPoints.swift */,
 				154832BE205B50F800AB0262 /* TrackerClient.swift */,
-				154832C5205B6F5D00AB0262 /* ImageManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -170,7 +236,7 @@
 			children = (
 				15F583D4205A242300C6AD20 /* AppDelegate.swift */,
 				154832C2205B574200AB0262 /* NavigationController */,
-				15F583EC205A29E600C6AD20 /* Movies Tracker */,
+				1528AE62205CB770008FF349 /* Movies */,
 				15F583F5205A2BB100C6AD20 /* Extension */,
 				15F583FE205A391300C6AD20 /* Shared */,
 				1566FCA8205A415C007A51DD /* Core */,
@@ -178,7 +244,7 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		15F583EC205A29E600C6AD20 /* Movies Tracker */ = {
+		15F583EC205A29E600C6AD20 /* Tracker */ = {
 			isa = PBXGroup;
 			children = (
 				1566FCB1205A4843007A51DD /* Entity */,
@@ -190,7 +256,7 @@
 				1566FCAC205A456A007A51DD /* MoviesTrackerSyncAPI.swift */,
 				154832C3205B597100AB0262 /* MoviesTrackerInteractor.swift */,
 			);
-			path = "Movies Tracker";
+			path = Tracker;
 			sourceTree = "<group>";
 		};
 		15F583F5205A2BB100C6AD20 /* Extension */ = {
@@ -198,6 +264,7 @@
 			children = (
 				15F583F3205A2BA800C6AD20 /* Constraint+Extension.swift */,
 				154832C7205B779F00AB0262 /* UIImage+Extension.swift */,
+				15A07AC5205D619D009B0B1B /* UIViewController+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -329,14 +396,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iCouch/Pods-iCouch-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
@@ -352,22 +419,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1528AE75205CE083008FF349 /* MovieDetailInteractor.swift in Sources */,
 				15F583D5205A242300C6AD20 /* AppDelegate.swift in Sources */,
 				15F583F7205A323600C6AD20 /* MoviesTrackerScreen.swift in Sources */,
 				154832BF205B50F800AB0262 /* TrackerClient.swift in Sources */,
 				1566FCAB205A4402007A51DD /* MoviesTrackerPresenter.swift in Sources */,
 				154832C1205B573C00AB0262 /* MainNavigationController.swift in Sources */,
+				1528AE6D205CDA35008FF349 /* MovieDetailProtocols.swift in Sources */,
 				1566FCA7205A414A007A51DD /* EndPoints.swift in Sources */,
 				15F583F2205A2AEC00C6AD20 /* MoviesCell.swift in Sources */,
+				15980CF1205D592C00E19DDA /* Genre.swift in Sources */,
 				1566FCAF205A45B7007A51DD /* Movie.swift in Sources */,
 				15F583E7205A276200C6AD20 /* MoviesTrackerModule.swift in Sources */,
+				1528AE6B205CD9FE008FF349 /* MovieDetailPresenter.swift in Sources */,
 				15F583FD205A390D00C6AD20 /* ColorPalette.swift in Sources */,
+				15A07AC6205D619D009B0B1B /* UIViewController+Extension.swift in Sources */,
 				15F583F0205A2A7B00C6AD20 /* MoviesTrackerViewController.swift in Sources */,
-				154832C6205B6F5D00AB0262 /* ImageManager.swift in Sources */,
+				1528AE73205CDFC5008FF349 /* MovieDetailSyncAPI.swift in Sources */,
 				154832C8205B779F00AB0262 /* UIImage+Extension.swift in Sources */,
+				1528AE66205CCE53008FF349 /* MovieDetailScreen.swift in Sources */,
+				1528AE6F205CDB54008FF349 /* MovieDetail.swift in Sources */,
 				15F583F4205A2BA800C6AD20 /* Constraint+Extension.swift in Sources */,
+				1528AE69205CD7B6008FF349 /* MovieDetailModule.swift in Sources */,
 				1566FCAD205A456A007A51DD /* MoviesTrackerSyncAPI.swift in Sources */,
 				154832C4205B597100AB0262 /* MoviesTrackerInteractor.swift in Sources */,
+				1528AE60205CB752008FF349 /* MovieDetailViewController.swift in Sources */,
 				15F583E9205A288800C6AD20 /* MoviesTrackerProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
