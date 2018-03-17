@@ -81,16 +81,16 @@ final class MovieDetailScreen: UIView {
     }
 
     func configure(_ movie: MovieDetail) {
-        self?.releaseDate.text = movie.releaseDate
-        self?.overview.text = movie.overview
+        self.releaseDate.text = movie.releaseDate
+        self.overview.text = movie.overview
 
-        self?.genre.text = movie.genre.compactMap { String($0.name) }.joined(separator: "∙")
+        self.genre.text = movie.genre.compactMap { String($0.name) }.joined(separator: "∙")
 
         guard let url = URL(string: EndPoints.raise.image(movie.poster).getUrl()) else {
             fatalError("EndPoint Image cannot be created!")
         }
 
-        self?.poster.image = nil
-        self?.poster.af_setImage(withURL: url)
+        self.poster.image = nil
+        self.poster.af_setImage(withURL: url)
     }
 }

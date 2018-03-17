@@ -24,8 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func rootModule(window: UIWindow?) {
         let module = MoviesTrackerModule()
-        window?.rootViewController = module.start()
+        module.start(in: window)
     }
 
 }
-
