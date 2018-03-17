@@ -15,6 +15,7 @@ class MoviesCell: UICollectionViewCell {
         image.translatesAutoresizingMaskIntoConstraints = false
         image.clipsToBounds = true
         image.layer.cornerRadius = 4
+        image.contentMode = .scaleAspectFit
         return image
     }()
     
@@ -31,9 +32,11 @@ class MoviesCell: UICollectionViewCell {
     
     func set(path: String?) {
         banner.image = nil
-        
+
         if let path = path, let url = URL(string: EndPoints.raise.image(path).getUrl()) {
             banner.af_setImage(withURL: url)
+        } else {
+            banner.image = UIImage(named: "image_not_found")
         }
     }
 }

@@ -10,7 +10,7 @@ import ObjectMapper
 
 struct MovieDetail {
   
-    let poster: String
+    let poster: String?
     let title: String
     let genre: [Genre]
     let releaseDate: String
@@ -21,7 +21,7 @@ struct MovieDetail {
 extension MovieDetail: ImmutableMappable {
   
     init(map: Map) throws {
-        poster = try map.value("poster_path")
+        poster = try? map.value("poster_path")
         title = try map.value("title")
         genre = try map.value("genres")
         releaseDate = try map.value("release_date")
