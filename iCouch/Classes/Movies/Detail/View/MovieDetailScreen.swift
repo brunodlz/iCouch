@@ -10,7 +10,15 @@ import UIKit
 import AlamofireImage
 
 final class MovieDetailScreen: UIView {
-    
+
+    let scrollView: UIScrollView = {
+        let scroll = UIScrollView(frame: .zero)
+        scroll.isScrollEnabled = true
+        scroll.backgroundColor = ColorPalette.darkGray
+        scroll.translatesAutoresizingMaskIntoConstraints = false
+        return scroll
+    }()
+
     let poster: UIImageView = {
         let image = UIImageView(frame: .zero)
         image.translatesAutoresizingMaskIntoConstraints = false
@@ -21,6 +29,7 @@ final class MovieDetailScreen: UIView {
     let genre: UILabel = {
         let label = UILabel(frame: .zero)
         label.font = UIFont.systemFont(ofSize: 13)
+        label.numberOfLines = 0
         label.textColor = ColorPalette.gray
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -55,29 +64,34 @@ final class MovieDetailScreen: UIView {
     }
     
     private func addHierarchy() {
-        addSubview(poster)
-        addSubview(genre)
-        addSubview(releaseDate)
-        addSubview(overview)
+        scrollView.addSubview(poster)
+        scrollView.addSubview(genre)
+        scrollView.addSubview(releaseDate)
+        scrollView.addSubview(overview)
+
+        addSubview(scrollView)
     }
     
     private func addConstraints() {
-        poster.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        poster.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        poster.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-        poster.heightAnchor.constraint(equalTo: poster.widthAnchor, multiplier: 1.0/2.0).isActive = true
-        
+
+        addConstraintsForAllEdges(of: scrollView)
+
+        poster.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
+        poster.centerXAnchor.constraint(equalTo: scrollView.layoutMarginsGuide.centerXAnchor).isActive = true
+        poster.heightAnchor.constraint(equalTo: poster.widthAnchor, multiplier: 1.2).isActive = true
+
         genre.topAnchor.constraint(equalTo: poster.bottomAnchor, constant: 8).isActive = true
-        genre.leadingAnchor.constraint(equalTo: layoutMarginsGuide.leadingAnchor).isActive = true
-        genre.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor).isActive = true
+        genre.leadingAnchor.constraint(equalTo: scrollView.layoutMarginsGuide.leadingAnchor).isActive = true
+        genre.trailingAnchor.constraint(equalTo: scrollView.layoutMarginsGuide.trailingAnchor).isActive = true
         
         releaseDate.topAnchor.constraint(equalTo: genre.bottomAnchor, constant: 2).isActive = true
-        releaseDate.leadingAnchor.constraint(equalTo: layoutMarginsGuide.leadingAnchor).isActive = true
-        releaseDate.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor).isActive = true
+        releaseDate.leadingAnchor.constraint(equalTo: scrollView.layoutMarginsGuide.leadingAnchor).isActive = true
+        releaseDate.trailingAnchor.constraint(equalTo: scrollView.layoutMarginsGuide.trailingAnchor).isActive = true
         
         overview.topAnchor.constraint(equalTo: releaseDate.bottomAnchor, constant: 8).isActive = true
-        overview.leadingAnchor.constraint(equalTo: layoutMarginsGuide.leadingAnchor).isActive = true
-        overview.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor).isActive = true
+        overview.leadingAnchor.constraint(equalTo: scrollView.layoutMarginsGuide.leadingAnchor).isActive = true
+        overview.trailingAnchor.constraint(equalTo: scrollView.layoutMarginsGuide.trailingAnchor).isActive = true
+        overview.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: -8).isActive = true
     }
 
     func configure(_ movie: MovieDetail) {
