@@ -9,7 +9,8 @@
 import Foundation
 
 struct Secrets {
-    static let url = "https://api.themoviedb.org/3/movie"
+    static let moviedbURL = "https://api.themoviedb.org/3/movie"
+    static let tmdbURL = "https://image.tmdb.org/t/p/w500"
     static let keyAPI = ""
 }
 
@@ -20,14 +21,14 @@ final class EndPoints {
         case getDetail(Int)
         case image(String)
         
-        func url() -> String {
+        func getUrl() -> String {
             switch self {
             case .upcomming(let page):
-                return "\(Secrets.url)/upcoming?api_key=\(Secrets.keyAPI)&page=\(page)"
+                return "\(Secrets.moviedbURL)/upcoming?api_key=\(Secrets.keyAPI)&page=\(page)"
             case .getDetail(let idMovie):
-                return "\(Secrets.url)\(idMovie)?api_key=\(Secrets.keyAPI)"
+                return "\(Secrets.moviedbURL)/\(idMovie)?api_key=\(Secrets.keyAPI)"
             case .image(let name):
-                return "https://image.tmdb.org/t/p/w500\(name)"
+                return "\(Secrets.tmdbURL)\(name)"
             }
         }
     }
