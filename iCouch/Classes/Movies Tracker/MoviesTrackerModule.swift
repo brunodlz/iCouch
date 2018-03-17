@@ -13,14 +13,16 @@ final class MoviesTrackerModule: MoviesTrackerRouter {
     func start() -> UINavigationController {
         let moviesView = MoviesTrackerViewController()
         
-        UIApplication.shared.statusBarStyle = .lightContent
+        let client = TrackerClient()
+        let syncAPI = MoviesTrackerSyncAPI(client: client)
         
-        let navigationController = UINavigationController(rootViewController: moviesView)
-        navigationController.navigationBar.barTintColor = ColorPalette.darkGray
-        navigationController.navigationBar.isTranslucent = false
-        navigationController.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: ColorPalette.white]
+        let interactor = MoviesTrackerInteractor(api: syncAPI)
         
-        return navigationController
+        let presenter = MoviesTrackerPresenter(moviesView, interactor: interactor, router: self)
+        
+        moviesView.presenter = presenter
+        
+        return MainNavigationController(rootViewController: moviesView)
     }
     
     func showDetail(through id: Int) {

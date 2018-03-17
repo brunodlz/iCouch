@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		154832BF205B50F800AB0262 /* TrackerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154832BE205B50F800AB0262 /* TrackerClient.swift */; };
+		154832C1205B573C00AB0262 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154832C0205B573C00AB0262 /* MainNavigationController.swift */; };
+		154832C4205B597100AB0262 /* MoviesTrackerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154832C3205B597100AB0262 /* MoviesTrackerInteractor.swift */; };
+		154832C6205B6F5D00AB0262 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154832C5205B6F5D00AB0262 /* ImageManager.swift */; };
+		154832C8205B779F00AB0262 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154832C7205B779F00AB0262 /* UIImage+Extension.swift */; };
+		1566FCA7205A414A007A51DD /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1566FCA6205A414A007A51DD /* EndPoints.swift */; };
+		1566FCAB205A4402007A51DD /* MoviesTrackerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1566FCAA205A4402007A51DD /* MoviesTrackerPresenter.swift */; };
+		1566FCAD205A456A007A51DD /* MoviesTrackerSyncAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1566FCAC205A456A007A51DD /* MoviesTrackerSyncAPI.swift */; };
+		1566FCAF205A45B7007A51DD /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1566FCAE205A45B7007A51DD /* Movie.swift */; };
 		15F583D5205A242300C6AD20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F583D4205A242300C6AD20 /* AppDelegate.swift */; };
 		15F583DC205A242300C6AD20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15F583DB205A242300C6AD20 /* Assets.xcassets */; };
 		15F583DF205A242300C6AD20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15F583DD205A242300C6AD20 /* LaunchScreen.storyboard */; };
@@ -17,9 +26,19 @@
 		15F583F4205A2BA800C6AD20 /* Constraint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F583F3205A2BA800C6AD20 /* Constraint+Extension.swift */; };
 		15F583F7205A323600C6AD20 /* MoviesTrackerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F583F6205A323600C6AD20 /* MoviesTrackerScreen.swift */; };
 		15F583FD205A390D00C6AD20 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F583FC205A390D00C6AD20 /* ColorPalette.swift */; };
+		29961726EB07B7570424C7C4 /* Pods_iCouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28AC4EB1B18ECD0E61B4B398 /* Pods_iCouch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		154832BE205B50F800AB0262 /* TrackerClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerClient.swift; sourceTree = "<group>"; };
+		154832C0205B573C00AB0262 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		154832C3205B597100AB0262 /* MoviesTrackerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTrackerInteractor.swift; sourceTree = "<group>"; };
+		154832C5205B6F5D00AB0262 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		154832C7205B779F00AB0262 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		1566FCA6205A414A007A51DD /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		1566FCAA205A4402007A51DD /* MoviesTrackerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTrackerPresenter.swift; sourceTree = "<group>"; };
+		1566FCAC205A456A007A51DD /* MoviesTrackerSyncAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTrackerSyncAPI.swift; sourceTree = "<group>"; };
+		1566FCAE205A45B7007A51DD /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		15F583D1205A242300C6AD20 /* iCouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15F583D4205A242300C6AD20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15F583DB205A242300C6AD20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,6 +51,9 @@
 		15F583F3205A2BA800C6AD20 /* Constraint+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constraint+Extension.swift"; sourceTree = "<group>"; };
 		15F583F6205A323600C6AD20 /* MoviesTrackerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTrackerScreen.swift; sourceTree = "<group>"; };
 		15F583FC205A390D00C6AD20 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		28AC4EB1B18ECD0E61B4B398 /* Pods_iCouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iCouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		500F2DED74611859A7D8426C /* Pods-iCouch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCouch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iCouch/Pods-iCouch.debug.xcconfig"; sourceTree = "<group>"; };
+		5505ACDDA6B5733EEE69EFAD /* Pods-iCouch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCouch.release.xcconfig"; path = "Pods/Target Support Files/Pods-iCouch/Pods-iCouch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,12 +61,65 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29961726EB07B7570424C7C4 /* Pods_iCouch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		090419DE1D9B1F322AF16D10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				500F2DED74611859A7D8426C /* Pods-iCouch.debug.xcconfig */,
+				5505ACDDA6B5733EEE69EFAD /* Pods-iCouch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		154832C2205B574200AB0262 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				154832C0205B573C00AB0262 /* MainNavigationController.swift */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		1566FCA8205A415C007A51DD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1566FCA9205A4163007A51DD /* Networking */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1566FCA9205A4163007A51DD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1566FCA6205A414A007A51DD /* EndPoints.swift */,
+				154832BE205B50F800AB0262 /* TrackerClient.swift */,
+				154832C5205B6F5D00AB0262 /* ImageManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1566FCB0205A483A007A51DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15F583F6205A323600C6AD20 /* MoviesTrackerScreen.swift */,
+				15F583F1205A2AEC00C6AD20 /* MoviesCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1566FCB1205A4843007A51DD /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				1566FCAE205A45B7007A51DD /* Movie.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		156E6121205A3D8700C3FB10 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +133,8 @@
 			children = (
 				15F583D3205A242300C6AD20 /* iCouch */,
 				15F583D2205A242300C6AD20 /* Products */,
+				090419DE1D9B1F322AF16D10 /* Pods */,
+				DAD7E1764273BBA6125C94FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,9 +169,11 @@
 			isa = PBXGroup;
 			children = (
 				15F583D4205A242300C6AD20 /* AppDelegate.swift */,
+				154832C2205B574200AB0262 /* NavigationController */,
 				15F583EC205A29E600C6AD20 /* Movies Tracker */,
 				15F583F5205A2BB100C6AD20 /* Extension */,
 				15F583FE205A391300C6AD20 /* Shared */,
+				1566FCA8205A415C007A51DD /* Core */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -102,11 +181,14 @@
 		15F583EC205A29E600C6AD20 /* Movies Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				1566FCB1205A4843007A51DD /* Entity */,
+				1566FCB0205A483A007A51DD /* View */,
 				156E6121205A3D8700C3FB10 /* Protocols */,
 				15F583E6205A276200C6AD20 /* MoviesTrackerModule.swift */,
 				15F583EF205A2A7B00C6AD20 /* MoviesTrackerViewController.swift */,
-				15F583F6205A323600C6AD20 /* MoviesTrackerScreen.swift */,
-				15F583F1205A2AEC00C6AD20 /* MoviesCell.swift */,
+				1566FCAA205A4402007A51DD /* MoviesTrackerPresenter.swift */,
+				1566FCAC205A456A007A51DD /* MoviesTrackerSyncAPI.swift */,
+				154832C3205B597100AB0262 /* MoviesTrackerInteractor.swift */,
 			);
 			path = "Movies Tracker";
 			sourceTree = "<group>";
@@ -115,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				15F583F3205A2BA800C6AD20 /* Constraint+Extension.swift */,
+				154832C7205B779F00AB0262 /* UIImage+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -127,6 +210,14 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		DAD7E1764273BBA6125C94FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28AC4EB1B18ECD0E61B4B398 /* Pods_iCouch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15F583E3205A242300C6AD20 /* Build configuration list for PBXNativeTarget "iCouch" */;
 			buildPhases = (
+				A483E741793BE3F7879E2B27 /* [CP] Check Pods Manifest.lock */,
 				15F583CD205A242300C6AD20 /* Sources */,
 				15F583CE205A242300C6AD20 /* Frameworks */,
 				15F583CF205A242300C6AD20 /* Resources */,
+				FFC6F27D26D92896D71BEBC8 /* [CP] Embed Pods Frameworks */,
+				D1A9E628074E44C12F7591B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -159,7 +253,7 @@
 				TargetAttributes = {
 					15F583D0205A242300C6AD20 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -193,6 +287,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A483E741793BE3F7879E2B27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iCouch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1A9E628074E44C12F7591B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iCouch/Pods-iCouch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFC6F27D26D92896D71BEBC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iCouch/Pods-iCouch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iCouch/Pods-iCouch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		15F583CD205A242300C6AD20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -200,11 +354,20 @@
 			files = (
 				15F583D5205A242300C6AD20 /* AppDelegate.swift in Sources */,
 				15F583F7205A323600C6AD20 /* MoviesTrackerScreen.swift in Sources */,
+				154832BF205B50F800AB0262 /* TrackerClient.swift in Sources */,
+				1566FCAB205A4402007A51DD /* MoviesTrackerPresenter.swift in Sources */,
+				154832C1205B573C00AB0262 /* MainNavigationController.swift in Sources */,
+				1566FCA7205A414A007A51DD /* EndPoints.swift in Sources */,
 				15F583F2205A2AEC00C6AD20 /* MoviesCell.swift in Sources */,
+				1566FCAF205A45B7007A51DD /* Movie.swift in Sources */,
 				15F583E7205A276200C6AD20 /* MoviesTrackerModule.swift in Sources */,
 				15F583FD205A390D00C6AD20 /* ColorPalette.swift in Sources */,
 				15F583F0205A2A7B00C6AD20 /* MoviesTrackerViewController.swift in Sources */,
+				154832C6205B6F5D00AB0262 /* ImageManager.swift in Sources */,
+				154832C8205B779F00AB0262 /* UIImage+Extension.swift in Sources */,
 				15F583F4205A2BA800C6AD20 /* Constraint+Extension.swift in Sources */,
+				1566FCAD205A456A007A51DD /* MoviesTrackerSyncAPI.swift in Sources */,
+				154832C4205B597100AB0262 /* MoviesTrackerInteractor.swift in Sources */,
 				15F583E9205A288800C6AD20 /* MoviesTrackerProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,14 +495,17 @@
 		};
 		15F583E4205A242300C6AD20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 500F2DED74611859A7D8426C /* Pods-iCouch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/iCouch/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = code.io.iCouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -347,14 +513,17 @@
 		};
 		15F583E5205A242300C6AD20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5505ACDDA6B5733EEE69EFAD /* Pods-iCouch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/iCouch/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = code.io.iCouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

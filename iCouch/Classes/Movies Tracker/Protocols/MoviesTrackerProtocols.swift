@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol MoviesTrackerRouter: class {
     
@@ -16,20 +17,30 @@ protocol MoviesTrackerRouter: class {
 
 protocol MoviesTrackerView: class {
     
-    func show(entities: [Any])
+    func show(entities: [Movie])
     
     func showError(message: String)
     
 }
 
-protocol MoviesTrackerPresenter: class {
+protocol MoviesTrackerPresenterInput: class {
     
-    func loadContent()
+    init(_ view: MoviesTrackerView, interactor: MoviesTrackerInteractorInput, router: MoviesTrackerRouter)
+    
+    func loadContent(page: Int64)
     
 }
 
-protocol MoviesTrackerInteractor: class {
+protocol MoviesTrackerAPI: class {
     
-    func find() -> [Any] // TODO: Add observable (Rx)
+    func find(_ endPoint: URLRequest) -> Observable<Any>
+    
+}
+
+protocol MoviesTrackerInteractorInput: class {
+    
+    init(api: MoviesTrackerAPI)
+    
+    func find(by endPoint: URLRequest) -> Observable<[Movie]>
     
 }

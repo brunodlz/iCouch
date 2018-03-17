@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MoviesTrackerViewController: UIViewController {
+class MoviesTrackerViewController: UIViewController, MoviesTrackerView {
 
     private let moviesTrackerScreen: MoviesTrackerScreen
     
@@ -16,12 +16,21 @@ class MoviesTrackerViewController: UIViewController {
         return moviesTrackerScreen.collectionView
     }
     
+    private var listOfMovies: [Movie] {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
+    
+    private var currentPage: Int64 = 1
+    
     static let reuseIdentifier = "reuseIdentifier"
     
     var presenter: MoviesTrackerPresenter?
     
     required init() {
         moviesTrackerScreen = MoviesTrackerScreen(frame: .zero)
+        listOfMovies = [Movie]()
         
         super.init(nibName: nil, bundle: nil)
     }
@@ -37,6 +46,12 @@ class MoviesTrackerViewController: UIViewController {
         
         view.addSubview(collectionView)
         view.addConstraintsForAllEdges(of: collectionView)
+        
+        guard let presenter = presenter else {
+            fatalError("Presenter cannot be loaded!")
+        }
+        
+        presenter.loadContent(page: currentPage)
     }
     
     private func initializers() {
@@ -47,6 +62,13 @@ class MoviesTrackerViewController: UIViewController {
         collectionView.dataSource = self
     }
 
+    func show(entities: [Movie]) {
+        listOfMovies = entities
+    }
+    
+    func showError(message: String) {
+        print(message)
+    }
 }
 
 extension MoviesTrackerViewController: UICollectionViewDataSource, UICollectionViewDelegate {
@@ -55,11 +77,19 @@ extension MoviesTrackerViewController: UICollectionViewDataSource, UICollectionV
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MoviesTrackerViewController.reuseIdentifier, for: indexPath) as? MoviesCell else {
             fatalError("Do you have any problems with the cell?")
         }
+        let movie = listOfMovies[indexPath.item]
+        cell.set(path: movie.posterPath)
+        
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let movie = listOfMovies[indexPath.item]
+        presenter?.showDetail(through: movie.id)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 40
+        return listOfMovies.count
     }
 
 }

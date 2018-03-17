@@ -29,8 +29,17 @@ class MoviesCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func set(image: UIImage) {
+    func set(path: String) {
         banner.image = nil
-        banner.image = image
+        
+        guard let url = URL(string: EndPoints.raise.image(path).url()) else {
+            fatalError("EndPoint Image cannot be created!")
+        }
+        
+        ImageManager().download(url: url) { [weak self] image in
+            DispatchQueue.main.async {
+                self?.banner.image = image
+            }
+        }
     }
 }
