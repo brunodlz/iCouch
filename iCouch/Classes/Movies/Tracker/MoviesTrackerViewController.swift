@@ -22,7 +22,8 @@ class MoviesTrackerViewController: UIViewController, MoviesTrackerView {
         }
     }
     
-    private var currentPage: Int64 = 1
+    private var currentPage: Int = 1
+    private var totalPages: Int = 1
     
     static let reuseIdentifier = "reuseIdentifier"
     
@@ -65,12 +66,14 @@ class MoviesTrackerViewController: UIViewController, MoviesTrackerView {
         collectionView.dataSource = self
     }
 
-    func show(entities: [Movie]) {
+    func show(entities: [Movie], totalPages: Int) {
         didFinishRequest()
+        self.totalPages = totalPages
         listOfMovies.append(contentsOf: entities)
     }
     
     func showError(message: String) {
+        didFinishRequest()
         print("👻 \(message)")
     }
 }
@@ -88,12 +91,12 @@ extension MoviesTrackerViewController: UICollectionViewDataSource, UICollectionV
     }
 
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if indexPath.row == listOfMovies.count - 1 {
+        if indexPath.row == listOfMovies.count - 1 && currentPage <= totalPages {
             currentPage += 1
             presenter?.loadContent(page: currentPage)
         }
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let movie = listOfMovies[indexPath.item]
         presenter?.showDetail(through: movie)

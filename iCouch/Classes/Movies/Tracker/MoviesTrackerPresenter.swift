@@ -22,7 +22,7 @@ final class MoviesTrackerPresenter: MoviesTrackerPresenterInput {
         self.router = router
     }
     
-    func loadContent(page: Int64) {
+    func loadContent(page: Int) {
         guard let endPoint = URL(string: EndPoints.raise.upcomming(page).getUrl()) else {
             fatalError("The endPoint cannot be nil")
         }
@@ -31,7 +31,7 @@ final class MoviesTrackerPresenter: MoviesTrackerPresenterInput {
             .subscribe { [weak self] event in
                 switch event {
                 case .next(let elements):
-                    self?.view.show(entities: elements)
+                    self?.view.show(entities: elements.0, totalPages: elements.1)
                 case .error(let error):
                     self?.view.showError(message: error.localizedDescription)
                 default: break

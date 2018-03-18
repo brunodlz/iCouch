@@ -17,13 +17,15 @@ final class MoviesTrackerInteractor: MoviesTrackerInteractorInput {
         self.api = api
     }
 
-    func find(by endPoint: URLRequest) -> Observable<[Movie]> {
-        return api.find(endPoint).map { json -> [Movie] in
+    func find(by endPoint: URLRequest) -> Observable<([Movie],Int)> {
+        return api.find(endPoint).map { json -> ([Movie],Int) in
             guard let movies = json as? [String:AnyObject] else { fatalError("Something is wrong with JSON") }
-            
+
+            let totalPages = movies["total_pages"] as? Int ?? 1
+
             return (try movies
                 .filter { $0.key == "results" }
-                .flatMap { return try Mapper<Movie>().mapArray(JSONObject: $0.value) })
+                .flatMap { return try Mapper<Movie>().mapArray(JSONObject: $0.value) }, totalPages)
         }
     }
 }

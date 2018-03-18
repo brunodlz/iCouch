@@ -17,7 +17,7 @@ struct Secrets {
 final class EndPoints {
     
     enum raise {
-        case upcomming(Int64)
+        case upcomming(Int)
         case getDetail(Int)
         case image(String)
         

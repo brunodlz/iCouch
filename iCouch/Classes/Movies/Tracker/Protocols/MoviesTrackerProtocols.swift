@@ -17,7 +17,7 @@ protocol MoviesTrackerRouter: class {
 
 protocol MoviesTrackerView: class {
     
-    func show(entities: [Movie])
+    func show(entities: [Movie], totalPages: Int)
     
     func showError(message: String)
     
@@ -27,7 +27,7 @@ protocol MoviesTrackerPresenterInput: class {
     
     init(_ view: MoviesTrackerView, interactor: MoviesTrackerInteractorInput, router: MoviesTrackerRouter)
     
-    func loadContent(page: Int64)
+    func loadContent(page: Int)
     
 }
 
@@ -43,6 +43,6 @@ protocol MoviesTrackerInteractorInput: class {
     
     init(api: MoviesTrackerAPI)
     
-    func find(by endPoint: URLRequest) -> Observable<[Movie]>
+    func find(by endPoint: URLRequest) -> Observable<([Movie],Int)>
     
 }
