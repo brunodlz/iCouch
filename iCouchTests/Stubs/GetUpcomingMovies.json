@@ -1,0 +1,51 @@
+{
+    "results": [
+        {
+            "vote_count": 2780,
+            "id": 353486,
+            "video": false,
+            "vote_average": 6.5,
+            "title": "Jumanji: Welcome to the Jungle",
+            "popularity": 149.133504,
+            "poster_path": "/bXrZ5iHBEjH7WMidbUDQ0U2xbmr.jpg",
+            "original_language": "en",
+            "original_title": "Jumanji: Welcome to the Jungle",
+            "genre_ids": [
+                28,
+                12,
+                35,
+                10751
+            ],
+            "backdrop_path": "/rz3TAyd5kmiJmozp3GUbYeB5Kep.jpg",
+            "adult": false,
+            "overview": "The tables are turned as four teenagers are sucked into Jumanji's world - pitted against rhinos, black mambas and an endless variety of jungle traps and puzzles. To survive, they'll play as characters from the game.",
+            "release_date": "2017-12-09"
+        },
+        {
+            "vote_count": 339,
+            "id": 401981,
+            "video": false,
+            "vote_average": 6.4,
+            "title": "Red Sparrow",
+            "popularity": 105.651904,
+            "poster_path": "/vLCogyfQGxVLDC1gqUdNAIkc29L.jpg",
+            "original_language": "en",
+            "original_title": "Red Sparrow",
+            "genre_ids": [
+                9648,
+                53
+            ],
+            "backdrop_path": "/sGzuQYSTwJvLBc2PnuSVLHhuFeh.jpg",
+            "adult": false,
+            "overview": "Prima ballerina Dominika Egorova faces a bleak and uncertain future after she suffers an injury that ends her career. She soon turns to Sparrow School, a secret intelligence service that trains exceptional young people to use their minds and bodies as weapons. Egorova emerges as the most dangerous Sparrow after completing the sadistic training process. As she comes to terms with her new abilities, Dominika meets a CIA agent who tries to convince her that he is the only person she can trust.",
+            "release_date": "2018-03-01"
+        }
+    ],
+    "page": 1,
+    "total_results": 233,
+    "dates": {
+        "maximum": "2018-04-12",
+        "minimum": "2018-03-23"
+    },
+    "total_pages": 12
+}

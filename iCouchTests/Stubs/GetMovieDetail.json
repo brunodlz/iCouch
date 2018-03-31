@@ -1,0 +1,84 @@
+{
+    "adult": false,
+    "backdrop_path": "/rz3TAyd5kmiJmozp3GUbYeB5Kep.jpg",
+    "belongs_to_collection": {
+        "id": 495527,
+        "name": "Jumanji Collection",
+        "poster_path": "/cg7dst3rFcnJ3FXFHuQRTMs443s.jpg",
+        "backdrop_path": "/dsaUpJoxSqYJh96s5Z9hHzoRKQ3.jpg"
+    },
+    "budget": 90000000,
+    "genres": [
+        {
+            "id": 28,
+            "name": "Action"
+        },
+        {
+            "id": 12,
+            "name": "Adventure"
+        },
+        {
+            "id": 35,
+            "name": "Comedy"
+        },
+        {
+            "id": 10751,
+            "name": "Family"
+        }
+    ],
+    "homepage": "http://jumanjimovie.com",
+    "id": 353486,
+    "imdb_id": "tt2283362",
+    "original_language": "en",
+    "original_title": "Jumanji: Welcome to the Jungle",
+    "overview": "The tables are turned as four teenagers are sucked into Jumanji's world - pitted against rhinos, black mambas and an endless variety of jungle traps and puzzles. To survive, they'll play as characters from the game.",
+    "popularity": 148.133504,
+    "poster_path": "/bXrZ5iHBEjH7WMidbUDQ0U2xbmr.jpg",
+    "production_companies": [
+        {
+            "id": 350,
+            "logo_path": null,
+            "name": "Radar Pictures Inc.",
+            "origin_country": ""
+        },
+        {
+            "id": 7431,
+            "logo_path": null,
+            "name": "Sony Pictures Entertainment (SPE)",
+            "origin_country": ""
+        },
+        {
+            "id": 53462,
+            "logo_path": null,
+            "name": "Matt Tolmach Productions",
+            "origin_country": ""
+        },
+        {
+            "id": 73669,
+            "logo_path": null,
+            "name": "Seven Bucks Productions",
+            "origin_country": ""
+        }
+    ],
+    "production_countries": [
+        {
+            "iso_3166_1": "US",
+            "name": "United States of America"
+        }
+    ],
+    "release_date": "2017-12-09",
+    "revenue": 928901353,
+    "runtime": 119,
+    "spoken_languages": [
+        {
+            "iso_639_1": "en",
+            "name": "English"
+        }
+    ],
+    "status": "Released",
+    "tagline": "The game has evolved.",
+    "title": "Jumanji: Welcome to the Jungle",
+    "video": false,
+    "vote_average": 6.5,
+    "vote_count": 2770
+}
